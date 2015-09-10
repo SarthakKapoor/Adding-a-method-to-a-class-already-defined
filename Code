@@ -1,0 +1,13 @@
+function Person(name) 
+{  
+    this.name = name;
+}
+Person.prototype.walk = function() 
+{  
+    console.debug(this.name + " is walking.");
+}
+
+// Calling the new method
+var person = new Person("Rafael");  
+person.walk(); 
+// "Rafael is walking."  
